@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="venda.css">
+    <title>Ramires cell</title>
+</head>
+<body>
+    <div class="container" id="purchase-screen" style="display: none;">
+        <div class="product">
+            <img id="purchase-img" src="" alt="Produto">
+            <div class="product-details">
+                <h1 id="purchase-title" class="product-title"></h1>
+                <p id="purchase-price" class="product-price"></p>
+                <p id="purchase-description" class="product-description"></p>
+                <div class="quantity">
+                    <label for="quantity">Quantidade: </label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                </div>
+                <a href="#" class="btn">Adicionar ao Carrinho</a>
+            </div>
+        </div>
+
+        <h2>Produtos Relacionados</h2>
+        <div class="related-products">
+            <div class="related-product">
+                <img src="img/relacionado1.jpg" alt="Produto Relacionado 1">
+                <div class="related-product-details">
+                    <p class="related-product-title">Produto Relacionado 1</p>
+                    <p class="related-product-price">R$ 99,99</p>
+                </div>
+            </div>
+            <div class="related-product">
+                <img src="img/relacionado2.jpg" alt="Produto Relacionado 2">
+                <div class="related-product-details">
+                    <p class="related-product-title">Produto Relacionado 2</p>
+                    <p class="related-product-price">R$ 149,99</p>
+                </div>
+            </div>
+            <div class="related-product">
+                <img src="img/relacionado3.jpg" alt="Produto Relacionado 3">
+                <div class="related-product-details">
+                    <p class="related-product-title">Produto Relacionado 3</p>
+                    <p class="related-product-price">R$ 129,99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

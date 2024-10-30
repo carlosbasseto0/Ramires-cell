@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --font-principal:'Righteous', sans-serif;
+    --font-secundaria: 'Lato', sans-serif;
+    --azul: #141E65;
+    --cinza: #AEAAAA;
+    --font-padrao: "Open Sans", sans-serif;
+    --box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    --font-titulo: "Kanit", sans-serif;
+}
+
+body{
+    background-color: var(--azul);
+}
+
+.container{
+    text-align: center;
+    margin-top: 18%;
+}
+
+h1{
+    color: white;
+    font-family: var(--font-principal);
+    font-size: 35px;   
+}
+
+.paragrafo{
+    color: white;
+    font-family: var(--font-padrao);
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn{
+    background-color: var(--cinza);
+    padding: 8px 80px;
+    font-size: 18px;
+    color: black;
+    font-family: var(--font-principal);
+    border-radius: 18px;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.container-btn{
+    margin-top: 25px;
+}

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramires cell</title>
+    <link rel="stylesheet" href="compra-cll.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo-removebg-preview 1.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container-celular">
+        <header id="header">
+            <img src="img/logo-removebg-preview 1.png" alt="" class="logo-cll">
+            <nav id="nav">
+              <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburger" class="hamburguer"></span>
+              </button>
+              <ul id="menu" >
+                <li><a class="nav-cll" href="#home-cell">Home</a></li>
+                <li><a class="nav-cll" href="sobre.html">Sobre</a></li>
+                <li><a class="nav-cll" href="habilidade.html">Habilidade</a></li>
+                <li><a class="nav-cll" href="/">Serviço</a></li>
+                <li><a class="nav-cll" href="/">Equipe</a></li>
+                <li><a class="nav-cll" href="/">Contato</a></li>
+                <li><a class="nav-cll" href="compra-cll.html">Comprar</a></li>
+              </ul>
+            </nav>
+          </header>
+          
+    </div>
+    <div class="filter-container">
+        <label for="product-filter">Filtrar por categoria:</label>
+        <select id="product-filter">
+            <option value="all">Todos</option>
+            <option value="case">Capinhas</option>
+            <option value="charger">Carregadores</option>
+            <option value="earphone">Fones</option>
+        </select>
+
+        <div id="case-subfilter-container" style="display: none;">
+            <label for="case-subfilter">Filtrar por tipo de capinha:</label>
+            <select id="case-subfilter">
+                <option value="all">Todos</option>
+                <option value="iphone">iPhone</option>
+                <option value="samsung">Samsung</option>
+                <option value="xiaomi">Xiaomi</option>
+            </select>
+        </div>
+        
+        <div id="charger-subfilter-container" style="display: none;">
+            <label for="charger-subfilter">Filtrar por tipo de carregador:</label>
+            <select id="charger-subfilter">
+                <option value="all">Todos</option>
+                <option value="iphone">iPhone</option>
+                <option value="samsung">Samsung</option>
+                <option value="xiaomi">Xiaomi</option>
+            </select>
+        </div>
+        
+        <div id="earphone-subfilter-container" style="display: none;">
+            <label for="earphone-subfilter">Filtrar por tipo de fone:</label>
+            <select id="earphone-subfilter">
+                <option value="all">Todos</option>
+                <option value="iphone">iPhone</option>
+                <option value="samsung">Samsung</option>
+                <option value="xiaomi">Xiaomi</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="products-container">
+        <div class="product case iphone">
+            <img src="img/capinha-1.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">CAPINHA IPHONE</p>
+            <div class="container-btn">
+                <p class="valor-produto">R$ 100,00</p>
+                <button class="btn-compra" data-title="CAPINHA IPHONE" data-price="R$ 50,00" data-description="Capinha para iPhone de alta qualidade." data-img="img/capinha-1.png">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product case iphone">
+            <img src="img/capinha-iphone2.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">CAPINHA IPHONE</p>
+            <div class="container-btn">
+                <p class="valor-produto">R$ 100,00</p>
+                <button class="btn-compra" data-title="CAPINHA IPHONE" data-price="R$ 50,00" data-description="Capinha para iPhone de alta qualidade." data-img="img/capinha-iphone2.png">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product case iphone">
+            <img src="img/capinha-iphone3.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">CAPINHA IPHONE</p>
+            <div class="container-btn">
+                <p class="valor-produto">R$ 100,00</p>
+                <button class="btn-compra" data-title="CAPINHA IPHONE" data-price="R$ 50,00" data-description="Capinha para iPhone de alta qualidade." data-img="img/capinha-iphone3.png">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product case samsung">
+            <img src="img/capinha-sansung.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">CAPINHA SAMSUNG</p>
+            <div class="container-btn">
+                <p class="valor-produto">R$ 100,00</p>
+                <button class="btn-compra" data-title="CAPINHA IPHONE" data-price="R$ 50,00" data-description="Capinha para Sansung de alta qualidade." data-img="img/capinha-sansung">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product case samsung">
+            <img src="img/capinha-sansung-2" alt="" class="img-card-sansung">
+            <p class="titulo-card">CAPINHA SAMSUNG</p>
+            <div class="container-btn">
+                <p class="valor-produto">R$ 100,00</p>
+                <button class="btn-compra" data-title="CAPINHA IPHONE" data-price="R$ 50,00" data-description="Capinha para Sansung de alta qualidade." data-img="img/capinha-sansung-2">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product case samsung">
+            <img src="img/capinha-sansung-3.webp" alt="" class="img-card-sansung">
+            <p class="titulo-card">CAPINHA SAMSUNG</p>
+            <div class="container-btn">
+                <p class="valor-produto">R$ 100,00</p>
+                <button class="btn-compra" data-title="CAPINHA IPHONE" data-price="R$ 50,00" data-description="Capinha para Sansung de alta qualidade." data-img="img/capinha-sansung-3.png">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product case xiaomi">
+            <img src="img/capinha-xiome.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">CAPINHA XIAOMI</p>
+            <div class="container-btn">
+                <p class="valor-produto">R$ 100,00</p>
+                <button class="btn-compra" data-title="CAPINHA IPHONE" data-price="R$ 50,00" data-description="Capinha para Xiome de alta qualidade." data-img="img/capinha-xiome">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product case xiaomi">
+            <img src="img/capinha-xiome2.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">CAPINHA XIAOMI</p>
+            <div class="container-btn">
+                <p class="valor-produto">R$ 100,00</p>
+                <button class="btn-compra" data-title="CAPINHA IPHONE" data-price="R$ 50,00" data-description="Capinha para Xiome de alta qualidade." data-img="img/capinha-xiome2">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product case xiaomi">
+            <img src="img/capinha-xiome3.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">CAPINHA XIAOMI</p>
+            <div class="container-btn">
+                <p class="valor-produto">R$ 100,00</p>
+                <button class="btn-compra" data-title="CAPINHA IPHONE" data-price="R$ 50,00" data-description="Capinha para Xiome de alta qualidade." data-img="img/capinha-xiome3.png">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product charger iphone">
+            <img src="img/carregador-iphone.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">CARREGADOR IPHONE</p>
+            <div class="container-btn">
+                <p class="valor-produto">R$ 100,00</p>
+                <button class="btn-compra" data-title="CAPINHA IPHONE" data-price="R$ 50,00" data-description="Carregador para Iphone de alta qualidade." data-img="img/carregador-iphone">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product charger iphone">
+            <img src="img/carregador-iphone2.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">CARREGADOR IPHONE</p>
+            <div class="container-btn">
+                <p class="valor-produto">R$ 100,00</p>
+                <button class="btn-compra" data-title="CAPINHA IPHONE" data-price="R$ 50,00" data-description="Carregador para Iphone de alta qualidade." data-img="img/carregador-iphone2">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product charger iphone">
+            <img src="img/carregador-iphone3.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">CARREGADOR IPHONE</p>
+            <div class="container-btn">
+                <p class="valor-produto">R$ 100,00</p>
+                <button class="btn-compra" data-title="CAPINHA IPHONE" data-price="R$ 50,00" data-description="Carregador para Iphone de alta qualidade." data-img="img/carregador-iphone3">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product charger samsung">
+            <img src="img/carregador-sansung.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">CARREGADOR SAMSUNG</p>
+            <div class="container-btn">
+                <p class="valor-produto">R$ 100,00</p>
+                <button class="btn-compra" data-title="CAPINHA IPHONE" data-price="R$ 50,00" data-description="Carregador para Sansung de alta qualidade." data-img="img/carregador-sansung">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product charger samsung">
+            <img src="img/carregador-sansung2.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">CARREGADOR SAMSUNG</p>
+            <div class="container-btn">
+                <p class="valor-produto">R$ 100,00</p>
+                <button class="btn-compra" data-title="CAPINHA IPHONE" data-price="R$ 50,00" data-description="Carregador para Sansung de alta qualidade." data-img="img/carregador-sansung2">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product charger samsung">
+            <img src="img/carregador-sansung3.png" alt="" class="img-card-teste">
+            <p class="titulo-card">CARREGADOR SAMSUNG</p>
+            <div class="container-btn">
+                <p class="valor-produto">R$ 100,00</p>
+                <button class="btn-compra" data-title="CAPINHA IPHONE" data-price="R$ 50,00" data-description="Carregador para Sansung de alta qualidade." data-img="img/carregador-sansung3">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product charger xiaomi">
+            <img src="img/carregador-xiome.png" alt="" class="img-card-XIOME">
+            <p class="titulo-card">CARREGADOR XIAOMI</p>
+            <div class="container-btn">
+                <p class="valor-produto">R$ 100,00</p>
+                <button class="btn-compra" data-title="CAPINHA IPHONE" data-price="R$ 50,00" data-description="Carregador para Xiome de alta qualidade." data-img="img/carregador-xiome">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product charger xiaomi">
+            <img src="img/carregador-xiome2.png" alt="" class="img-card-XIOME-2">
+            <p class="titulo-card">CARREGADOR XIAOMI</p>
+            <div class="container-btn">
+                <p class="valor-produto">R$ 100,00</p>
+                <button class="btn-compra" data-title="CAPINHA IPHONE" data-price="R$ 50,00" data-description="Carregador para Xiome de alta qualidade." data-img="img/carregador-xiome2">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product charger xiaomi">
+            <img src="img/carregador-xiome3.png" alt="" class="img-card-XIOME-2">
+            <p class="titulo-card">CARREGADOR XIAOMI</p>
+            <div class="container-btn">
+                <p class="valor-produto">R$ 100,00</p>
+                <button class="btn-compra" data-title="CAPINHA IPHONE" data-price="R$ 50,00" data-description="Carregador para Xiome de alta qualidade." data-img="img/carregador-xiome3">Comprar</button>
+            </div>
+        </div>
+
+        <div class="product earphone iphone">
+            <img src="img/fone-iphone.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">FONE IPHONE</p>
+            <div class="container-btn">
+                <button class="btn-compra">Detalhes</button>
+                <a href="venda.html"><button class="btn-compra">Comprar</button></a>
+            </div>
+        </div>
+
+        <div class="product earphone iphone">
+            <img src="img/fone-iphone.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">FONE IPHONE</p>
+            <div class="container-btn">
+                <button class="btn-compra">Detalhes</button>
+                <a href="venda.html"><button class="btn-compra">Comprar</button></a>
+            </div>
+        </div>
+
+        <div class="product earphone iphone">
+            <img src="img/fone-iphone.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">FONE IPHONE</p>
+            <div class="container-btn">
+                <button class="btn-compra">Detalhes</button>
+                <a href="venda.html"><button class="btn-compra">Comprar</button></a>
+            </div>
+        </div>
+
+        <div class="product earphone samsung">
+            <img src="img/fone-sansung.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">FONE SAMSUNG</p>
+            <div class="container-btn">
+                <button class="btn-compra">Detalhes</button>
+                <a href="venda.html"><button class="btn-compra">Comprar</button></a>
+            </div>
+        </div>
+
+        <div class="product earphone samsung">
+            <img src="img/fone-sansung.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">FONE SAMSUNG</p>
+            <div class="container-btn">
+                <button class="btn-compra">Detalhes</button>
+                <a href="venda.html"><button class="btn-compra">Comprar</button></a>
+            </div>
+        </div>
+
+        <div class="product earphone samsung">
+            <img src="img/fone-sansung.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">FONE SAMSUNG</p>
+            <div class="container-btn">
+                <button class="btn-compra">Detalhes</button>
+                <a href="venda.html"><button class="btn-compra">Comprar</button></a>
+            </div>
+        </div>
+
+        <div class="product earphone xiaomi">
+            <img src="img/fone-xiome.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">FONE XIAOMI</p>
+            <div class="container-btn">
+                <button class="btn-compra">Detalhes</button>
+                <a href="venda.html"><button class="btn-compra">Comprar</button></a>
+            </div>
+        </div>
+
+        <div class="product earphone xiaomi">
+            <img src="img/fone-xiome.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">FONE XIAOMI</p>
+            <div class="container-btn">
+                <button class="btn-compra">Detalhes</button>
+                <a href="venda.html"><button class="btn-compra">Comprar</button></a>
+            </div>
+        </div>
+
+        <div class="product earphone xiaomi">
+            <img src="img/fone-xiome.png" alt="" class="img-card-sansung">
+            <p class="titulo-card">FONE XIAOMI</p>
+            <div class="container-btn">
+                <button class="btn-compra">Detalhes</button>
+                <a href="venda.html"><button class="btn-compra">Comprar</button></a>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <div class="container" id="purchase-screen" style="display: none;">
+        <div class="product-compra">
+            <img id="purchase-img" src="" alt="Produto">
+            <div class="product-details">
+                <h1 id="purchase-title" class="product-title"></h1>
+                <p id="purchase-price" class="product-price"></p>
+                <p id="purchase-description" class="product-description"></p>
+                <a href="#compra-agora" class="btn-venda">Comprar</a>
+            </div>
+        </div>
+
+        <h2 class="h2-relacionado">Produtos Relacionados</h2>
+        <div class="related-products">
+            <div class="related-product">
+                <img src="img/capinha-xiome.png" alt="Produto Relacionado 1">
+                <div class="related-product-details">
+                    <p class="related-product-title">Capinha Xiome</p>
+                    <p class="related-product-price">R$ 99,99</p>
+                </div>
+            </div>
+            <div class="related-product">
+                <img src="img/carregador-sansung.png" alt="Produto Relacionado 2">
+                <div class="related-product-details">
+                    <p class="related-product-title">Carregado Sansung</p>
+                    <p class="related-product-price">R$ 149,99</p>
+                </div>
+            </div>
+            <div class="related-product">
+                <img src="img/fone-iphone.webp" alt="Produto Relacionado 3">
+                <div class="related-product-details">
+                    <p class="related-product-title">Fone Iphone</p>
+                    <p class="related-product-price">R$ 129,99</p>
+                </div>
+            </div>
+        </div>
+        <div id="contact-screen" class="container">
+            <h2>Informações de Contato</h2>
+            <section id="compra-agora">
+            <form class="form" action="https://api.staticforms.xyz/submit" method="post">
+                <label>Nome</label>
+                <input type="text" name="name" placeholder="Nome completo" autocomplete="off" required>
+                <label>Email</label>
+                <input type="email" name="name" placeholder="Digite seu email" autocomplete="off" required>
+                <label>Numero</label>
+                <input type="text" name="name" placeholder="Numero para contato" autocomplete="off" required>
+                <label>Cidade</label>
+                <input type="text" name="name" placeholder="Noma da cidade" autocomplete="off" required>
+                <label>Rua</label>
+                <input type="text" name="name" placeholder="Endereço para entrega" autocomplete="off" required>
+                <label>Numero da casa</label>
+                <input type="text" name="name" placeholder="Numero da casa" autocomplete="off" required>
+                <label>Forma de pagamento</label>
+                <input type="text" name="name" placeholder="Forma de pagamento" autocomplete="off" required>
+                <button class="envia" type="submit">Enviar</button>
+    
+                <input type="hidden" name="accessKey" value="43cae4a1-2f06-4f38-98bc-27d79af5e405">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+            </form>
+        </section>
+        </div>
+        </div>
+   
+    <script src="compra-cll.js"></script>
+    
+</body>
+</html>

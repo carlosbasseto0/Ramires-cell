@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top:5rem;
+}
+
+
+:root{
+    --font-principal:'Righteous', sans-serif;
+    --font-secundaria: 'Lato', sans-serif;
+    --azul: #141E65;
+    --cinza: #AEAAAA;
+    --font-padrao: "Open Sans", sans-serif;
+    --box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    --font-titulo: "Kanit", sans-serif;
+}
+
+.filter-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.filter-container label {
+    margin-right: 10px;
+    font-family: var(--font-principal);
+    font-size: 19px;
+    cursor: pointer;
+    padding: 30px;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;;
+    text-align: center;
+    margin-left: 18px;
+}
+
+.product {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    width: 90%;
+    display: none; 
+    height: 320px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+
+.product.case,
+.product.charger,
+.product.earphone {
+    display: block;
+}
+
+
+.cabecario{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: var(--box-shadow)
+}
+
+.logo-tipo{
+    width: 70px;
+    margin:15px;
+}
+
+.lista-nav{
+    display: flex;
+    list-style: none;
+}
+
+.item-nav{
+    margin-top: 30px;
+}
+
+.link-nav{
+    padding: 15px;
+    text-decoration: none;
+    color: var(--cinza);
+    font-family: var(--font-padrao);
+}
+
+.botao-compra{
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--cinza);
+    font-family: var(--font-padrao);
+    border: 2px solid white;
+    margin-right: 15px;
+}
+
+
+.link-nav:hover{
+    color: white;
+}
+
+.home{
+    background-image: url(img/home-fundo.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center center, top left;
+    background-size: cover, auto;
+    height: 100vh;
+}
+
+.container-home{
+    display: flex;
+    padding: 80px;
+}
+
+.img-card{
+    width: 90px;
+}
+
+.img-card-sansung{
+    width: 180px;
+}
+
+.img-card-XIOME{
+    width: 140px;
+}
+
+.titulo-card{
+    font-family: var(--font-principal);
+}
+
+.container-btn{
+    margin-left: 15px;
+    display: flex;
+
+}
+
+.valor-produto{
+    font-family: var(--font-principal);
+    margin-top: 5px;
+    margin-right: 25px;
+}
+
+.btn-compra{
+    width: 150px;
+    height: 30px;
+    border-radius: 18px;
+    background-color: var(--azul);
+    border: 1px solid var(--azul);
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-compra:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid var(--azul);
+}
+
+#product-filter{
+    font-family: var(--font-principal);
+    font-size: 16px;
+}
+
+
+#purchase-img{
+    width: 180px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+
+.product-details {
+    padding: 20px;
+    flex: 1;
+}
+
+.product-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-price {
+    font-size: 0px;
+    color: #E53935;
+    margin-bottom: 20px;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.img-card-teste{
+    width: 115px;
+}
+
+.img-card-XIOME-2{
+    width: 175px;   
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quantity input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E53935;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #D32F2F;
+}
+
+.related-products {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 26%;
+}
+
+.h2-relacionado{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 32px;
+    font-family: var(--font-principal);
+}
+
+.related-product {
+    flex: 1;
+    max-width: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.related-product img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.related-product-details {
+    padding: 10px;
+}
+
+.related-product-title {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.related-product-price {
+    font-size: 14px;
+    color: #E53935;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: #1d1d2e;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+section h2{
+    color: #f5f5f5;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form label{
+    color: #f5f5f5;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+.form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+.form input:focus{
+    border-radius: 16px;
+}
+.form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+.form textarea:focus{
+    border-radius: 16px;
+}
+.form .envia{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+.form .envia:hover{
+    background: #f5f5f5;
+    color: #101026;
+    border-radius: 16px;
+}
+
+/*Página do Obrigado*/
+
+.main{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background: #101026;
+   flex-direction: column;
+}
+.text{
+    font-size: 45px;
+    color: #f5f5f5;
+    margin-bottom: 30px;
+}
+.paragrafo{
+    color: #f5f5f5;
+    margin-bottom: 50px;
+}
+.btn{
+    padding: 15px 55px;
+    background: #f5f5f5;
+    text-decoration: none;
+    color: #101026;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+.btn:hover{
+    border-radius: 16px;
+}
+
+.btn-venda{
+    padding: 10px 35px;
+    background-color: var(--azul);
+    color: var(--cinza);
+    font-family: var(--font-secundaria);
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 17px;
+}
+.product-compra{
+    border: 1px solid black;
+    width: 35%;
+    margin-left: 32%;
+    border-radius: 18px;
+    box-shadow: var(--box-shadow);
+}
